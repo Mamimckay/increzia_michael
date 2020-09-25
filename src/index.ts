@@ -29,21 +29,23 @@ class SommeEntier {
     this.number = number;
   }
 
+  arrayRange() {
+    let nbreRange = this.number;
+    console.log(`tArray = [${nbreRange}]`);
+  }
+
   positifEntier() {
-    let nombreTotal = this.number.map((nbre) => {
+    let nbreSplice = this.number.splice(2, (this.number.length -1))
+    nbreSplice = nbreSplice.map((nbre) => {
       if (nbre > 0) {
         console.log(`sommeEntier(2,tArray) = ${nbre}`);
       }
     })
   }
-
-  arrayRange(){
-    let nombreRange = this.number.reverse();
-    console.log(`tArray = [${nombreRange}]`);
-  }
 }
 
 let sommeNumber = new SommeEntier([0, 3, -5, 12, -18, -20]);
+let sommeNumber2 = new SommeEntier([0, 3, -5, 12, -18, -20]);
 
 sommeNumber.positifEntier();
-sommeNumber.arrayRange();
+sommeNumber2.arrayRange();
