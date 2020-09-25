@@ -39,7 +39,7 @@ class SommeEntier {
 
   arrayRange(){
     let nombreRange = this.number.reverse();
-    console.log(nombreRange);
+    console.log(`tArray = [${nombreRange}]`);
   }
 }
 
